@@ -18,7 +18,7 @@ function rockPaperScissors(playerGuess) {
     } else if (playerGuess === 's' || playerGuess === 'scissors') {
         playerGuess = scissors;
     } else {
-        console.log('Invalid Input. Try Again...');
+        console.log('\x1b[91m Invalid input! Try again... \x1b[0m');
     }
     console.log(`You choose: ${playerGuess}`);
 
@@ -35,13 +35,15 @@ function rockPaperScissors(playerGuess) {
 
     if (playerGuess === rock && computerGuess == scissors || playerGuess === scissors && computerGuess == paper
         || playerGuess === paper && computerGuess == rock) {
-        console.log('You win!');
+        console.log('\x1b[92m You win! \x1b[0m');
     } else if (playerGuess === rock && computerGuess == paper || playerGuess === scissors && computerGuess == rock
         || playerGuess === paper && computerGuess == scissors) {
-        console.log('You lose!');
+        console.log('\x1b[93m You lose! \x1b[0m');
     } else {
-        console.log('This game was a draw!')
+        console.log('\x1b[35m This game was a draw! \x1b[0m')
     }
 
 }
 rockPaperScissors('p');
+rockPaperScissors('r');
+rockPaperScissors('s');

@@ -33,18 +33,18 @@ function rockPaperScissors() {
             } else if (playerGuess === 'scissors') {
                 playerGuess = scissors;
             } else {
-                console.log('Invalid input! Try again...');
+                console.log('\x1b[91m Invalid input! Try again... \x1b[0m');
             }
             if (playerGuess === rock && computerGuess == scissors || playerGuess === scissors && computerGuess == paper
                 || playerGuess === paper && computerGuess == rock) {
-                console.log('You win!');
+                    console.log('\x1b[92m You win! \x1b[0m');
                 return readline.close();
             } else if (playerGuess === rock && computerGuess == paper || playerGuess === scissors && computerGuess == rock
                 || playerGuess === paper && computerGuess == scissors) {
-                console.log('You lose!');
+                    console.log('\x1b[93m You lose! \x1b[0m');
                 return readline.close();
             } else {
-                console.log('This game was a draw!');
+                console.log('\x1b[35m This game was a draw! \x1b[0m');
                 recursiveReadline();
             }
         });

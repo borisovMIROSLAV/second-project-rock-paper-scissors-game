@@ -9,8 +9,6 @@ function rockPaperScissors(playerGuess) {
     const paper = 'Paper';
     const scissors = 'Scissors';
 
-    // let playerGuess;
-
     if (playerGuess === 'r' || playerGuess === 'rock') {
         playerGuess = rock;
     } else if (playerGuess === 'p' || playerGuess === 'paper') {
@@ -40,9 +38,8 @@ function rockPaperScissors(playerGuess) {
         || playerGuess === paper && computerGuess == scissors) {
         console.log('\x1b[93m You lose! \x1b[0m');
     } else {
-        console.log('\x1b[35m This game was a draw! \x1b[0m')
+        console.log('\x1b[35m This game was a draw! \x1b[0m');
     }
-
 }
 rockPaperScissors('p');
 rockPaperScissors('r');

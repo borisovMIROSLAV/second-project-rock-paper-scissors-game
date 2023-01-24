@@ -19,7 +19,7 @@ function rockPaperScissors(playerGuess) {
     } else {
         console.log('Invalid Input. Try Again...');
     }
-    console.log(`You choose ${playerGuess}`);
+    console.log(`You choose: ${playerGuess}`);
 
     let computerGuess = Math.floor(Math.random() * 3) + 1;
 

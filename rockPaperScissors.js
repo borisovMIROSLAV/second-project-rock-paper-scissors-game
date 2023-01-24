@@ -1,5 +1,4 @@
-function rockPaperScissors(playerGuess) {
-
+function rockPaperScissors() {
     const readline = require('readline').createInterface({
         input: process.stdin,
         output: process.stdout
@@ -44,4 +43,4 @@ function rockPaperScissors(playerGuess) {
     }
 
 }
-rockPaperScissors('r');
+rockPaperScissors();

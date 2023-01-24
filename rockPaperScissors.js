@@ -1,4 +1,4 @@
-function rockPaperScissors() {
+function rockPaperScissors(playerGuess) {
 
     const readline = require('readline').createInterface({
         input: process.stdin,
@@ -9,7 +9,7 @@ function rockPaperScissors() {
     const paper = 'Paper';
     const scissors = 'Scissors';
 
-    let playerGuess;
+    // let playerGuess;
 
     if (playerGuess === 'r' || playerGuess === 'rock') {
         playerGuess = rock;
@@ -33,15 +33,15 @@ function rockPaperScissors() {
     }
     console.log(`The computer choose: ${computerGuess}`);
 
-    if (playerGuess === rock && computerGuess === scissors || playerGuess === scissors && computerGuess === paper
-        || playerGuess === paper && computerGuess === rock) {
+    if (playerGuess === rock && computerGuess == scissors || playerGuess === scissors && computerGuess == paper
+        || playerGuess === paper && computerGuess == rock) {
         console.log('You win!');
-    } else if (playerGuess === rock && computerGuess === paper || playerGuess === scissors && computerGuess === rock
-        || playerGuess === paper && computerGuess === scissors) {
+    } else if (playerGuess === rock && computerGuess == paper || playerGuess === scissors && computerGuess == rock
+        || playerGuess === paper && computerGuess == scissors) {
         console.log('You lose!');
     } else {
         console.log('This game was a draw!')
     }
 
-} 
-rockPaperScissors();
+}
+rockPaperScissors('r');

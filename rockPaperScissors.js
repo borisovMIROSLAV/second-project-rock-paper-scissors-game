@@ -30,7 +30,7 @@ function rockPaperScissors(playerGuess) {
     } else if (computerGuess === 3) {
         computerGuess = scissors;
     }
-    console.log(`The computer choose: ${computerGuess}`);
+    console.log(`The computer chooses: ${computerGuess}`);
 
     if (playerGuess === rock && computerGuess == scissors || playerGuess === scissors && computerGuess == paper
         || playerGuess === paper && computerGuess == rock) {

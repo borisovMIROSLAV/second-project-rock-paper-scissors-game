@@ -17,6 +17,7 @@ function rockPaperScissors(playerGuess) {
         playerGuess = scissors;
     } else {
         console.log('\x1b[91m Invalid input! Try again... \x1b[0m');
+        return;
     }
     console.log(`You choose: ${playerGuess}`);
 
@@ -41,6 +42,10 @@ function rockPaperScissors(playerGuess) {
         console.log('\x1b[35m This game was a draw! \x1b[0m');
     }
 }
+rockPaperScissors('m');
+console.log('-------------------------------');
 rockPaperScissors('p');
+console.log('-------------------------------');
 rockPaperScissors('r');
+console.log('-------------------------------');
 rockPaperScissors('s');

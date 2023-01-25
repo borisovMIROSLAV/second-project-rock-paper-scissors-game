@@ -26,11 +26,11 @@ function rockPaperScissors() {
         readline.question('Player choice: ', answer => {
             playerGuess = answer;
 
-            if (playerGuess === 'rock') {
+            if (playerGuess === 'rock' || playerGuess === 'r') {
                 playerGuess = rock;
-            } else if (playerGuess === 'paper') {
+            } else if (playerGuess === 'paper' || playerGuess === 'p') {
                 playerGuess = paper;
-            } else if (playerGuess === 'scissors') {
+            } else if (playerGuess === 'scissors' || playerGuess === 's') {
                 playerGuess = scissors;
             } else {
                 console.log('\x1b[91m Invalid input! Try again... \x1b[0m');

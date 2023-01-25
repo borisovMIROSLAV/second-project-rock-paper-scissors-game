@@ -1,6 +1,7 @@
-# Rock - Paper - Scissors Game
+# The "Rock - Paper - Scissors" Game
 
-Simple rock, paper, scissors game. The first to three points is the winner.
+JavaScript implementation of the simple rock, paper, scissors game. The first to three points is the winner.
+
 1. First I created a readline so the game can be played until a winner is decided and it is closed.
 - https://nodejs.org/api/readline.html
 2. I set constants for rock, paper and scissors in order to give them string value.

@@ -18,4 +18,4 @@ JavaScript implementation of the simple rock, paper, scissors game. The first to
 12. Check if the player or the computer reached 3 points. If yes, closed the game.
 13. Print the player and computer guesses, print the outcome of the current attempt, print if the player or the computer is the winner once 3 points are reached by either of the two.
 
-Tested in Replit: https://replit.com/@MiroBB/RockPaperScissors#rockPaperScissors.js
+Tested in Replit: https://replit.com/@MiroBB/RockPaperScissors#index.js

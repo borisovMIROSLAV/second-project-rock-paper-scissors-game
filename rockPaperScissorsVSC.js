@@ -9,6 +9,11 @@ function rockPaperScissors(playerGuess) {
     const paper = 'Paper';
     const scissors = 'Scissors';
 
+    let playerCounter = 0;
+    let computerCounter = 0;
+
+    console.log('Game of Rock, Paper, Scissors')
+
     if (playerGuess === 'r' || playerGuess === 'rock') {
         playerGuess = rock;
     } else if (playerGuess === 'p' || playerGuess === 'paper') {
@@ -34,12 +39,20 @@ function rockPaperScissors(playerGuess) {
 
     if (playerGuess === rock && computerGuess == scissors || playerGuess === scissors && computerGuess == paper
         || playerGuess === paper && computerGuess == rock) {
+            playerCounter++;
         console.log('\x1b[92m You win! \x1b[0m');
     } else if (playerGuess === rock && computerGuess == paper || playerGuess === scissors && computerGuess == rock
         || playerGuess === paper && computerGuess == scissors) {
+            computerCounter++;
         console.log('\x1b[93m You lose! \x1b[0m');
     } else {
         console.log('\x1b[35m This game was a draw! \x1b[0m');
+    }
+    console.log(`Score: ${playerCounter} - ${computerCounter}`);
+    if (playerCounter === 3) {
+        console.log('The game ended! The Player wins!');
+    } else if (computerCounter === 3) {
+        console.log('The game ended! The Computer wins!');
     }
 }
 rockPaperScissors('m');
